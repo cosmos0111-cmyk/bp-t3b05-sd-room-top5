@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (3/3) · t3b05-sd-room-top5</title>
+  <meta name="description" content="t3b05-sd-room-top5에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sindorim-room-choice.link-hub.org/posts-3.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+*, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+:root {
+ --primary: #000000;
+ --secondary: #ffffff;
+ --accent: #ff3b00;
+ --font-head: Impact, 'Arial Black', system-ui, sans-serif;
+ --font-body: system-ui, -apple-system, 'Segoe UI', sans-serif;
+ --gap: 32px;
+ --padding: 48px;
+ --section-gap: 80px;
+ --border-thick: 4px;
+}
+body {
+ font-family: var(--font-body);
+ background-color: #f0f0f0;
+ color: var(--primary);
+ line-height: 1.5;
+ overflow-x: hidden;
+ background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+body {
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+}
+header {
+ background: var(--primary);
+ color: var(--secondary);
+ padding: 16px 24px;
+ border-bottom: 4px solid var(--accent);
+ position: sticky;
+ top: 0;
+ z-index: 50;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+header .q-btn-fxcc {
+ font-family: var(--font);
+ font-size: 2rem;
+ letter-spacing: -0.5px;
+ text-transform: uppercase;
+ color: var(--secondary);
+ background: var(--accent);
+ padding: 6px 16px;
+ display: inline-block;
+ transform: skew(-4deg);
+ border: 2px solid var(--secondary);
+ line-height: 1.2;
+}
+nav.v-nav-i7y0 {
+ display: flex;
+ gap: 28px;
+ font-family: var(--font);
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+}
+nav.v-nav-i7y0 a {
+ color: var(--secondary);
+ text-decoration: none;
+ border-bottom: 2px solid transparent;
+ transition: border-color 0.1s;
+}
+nav.v-nav-i7y0 a:hover {
+ border-bottom: 3px solid var(--accent);
+}
+.hamburger {
+ display: none;
+ background: none;
+ border: 2px solid var(--secondary);
+ color: var(--secondary);
+ font-size: 2rem;
+ padding: 6px 14px;
+ cursor: pointer;
+}
+main {
+ max-width: 1140px;
+ margin: 0 auto;
+ width: 100%;
+ display: grid;
+ grid-template-columns: 1fr 320px;
+ gap: var(--gap);
+ padding: 40px 24px;
+ flex: 1;
+}
+.hero-main {
+ grid-column: 1 / -1;
+ background: var(--primary);
+ color: var(--secondary);
+ padding: 64px 48px;
+ border: 4px solid var(--accent);
+ position: relative;
+ margin-bottom: 20px;
+ background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 8px);
+}
+.hero-main h1 {
+ font-family: var(--font);
+ font-size: clamp(3.2rem, 7vw, 5rem);
+ line-height: 1;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ margin-bottom: 24px;
+ word-break: keep-all;
+ color: var(--accent);
+ text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+}
+.hero-main .v-top-ifcs {
+ font-size: 1.3rem;
+ font-weight: 600;
+ border-left: 8px solid var(--accent);
+ padding-left: 24px;
+ margin-top: 20px;
+ max-width: 650px;
+}
+.left-col {
+ display: flex;
+ flex-direction: column;
+ gap: var(--section-gap);
+}
+.right-col {
+ display: flex;
+ flex-direction: column;
+ gap: 28px;
+}
+.content-card {
+ background: var(--secondary);
+ border: 2px solid var(--primary);
+ padding: var(--padding);
+ box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+ border-radius: 0;
+ position: relative;
+}
+.content-card::before {
+ content: '';
+ position: absolute;
+ top: -6px;
+ left: -6px;
+ width: 20px;
+ height: 20px;
+ background: var(--accent);
+ z-index: 0;
+}
+.content-card h2 {
+ font-family: var(--font);
+ font-size: 2.4rem;
+ text-transform: uppercase;
+ margin-bottom: 24px;
+ border-bottom: 4px solid var(--accent);
+ padding-bottom: 10px;
+ display: inline-block;
+ letter-spacing: -0.2px;
+}
+.content-card h3 {
+ font-family: var(--font);
+ font-size: 1.5rem;
+ margin: 20px 0 12px;
+ color: var(--accent);
+}
+.content-card p {
+ font-size: 1.05rem;
+ margin-bottom: 18px;
+ line-height: 1.7;
+ color: #1a1a1a;
+}
+.side-card {
+ background: var(--secondary);
+ border: 2px solid var(--primary);
+ padding: 28px;
+ box-shadow: 10px 10px 0 rgba(0,0,0,0.06);
+ border-radius: 0;
+ transform: rotate(-0.3deg);
+ position: sticky;
+ top: 110px;
+}
+.side-card h3 {
+ font-family: var(--font);
+ font-size: 1.5rem;
+ border-bottom: 3px solid var(--accent);
+ padding-bottom: 10px;
+ margin-bottom: 18px;
+}
+.side-card ul {
+ list-style: none;
+ font-weight: 600;
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+}
+.side-card ul li::before {
+ content: "▨";
+ color: var(--accent);
+ margin-right: 12px;
+ font-size: 1.2rem;
+}
+.faq-section {
+ background: var(--secondary);
+ border: 3px solid var(--primary);
+ padding: var(--padding);
+ margin-top: 20px;
+ border-radius: 0;
+}
+.faq-section h2 {
+ font-family: var(--font);
+ font-size: 2.2rem;
+ text-transform: uppercase;
+ background: var(--primary);
+ color: var(--secondary);
+ display: inline-block;
+ padding: 8px 24px;
+ margin-bottom: 28px;
+}
+.faq-item {
+ margin-bottom: 28px;
+ border-left: 6px solid var(--accent);
+ padding-left: 20px;
+}
+.faq-item h3 {
+ font-family: var(--font);
+ font-size: 1.4rem;
+ margin-bottom: 8px;
+}
+.author-bio {
+ background: var(--secondary);
+ border: 3px dashed var(--primary);
+ padding: 28px;
+ margin-top: 32px;
+ display: flex;
+ gap: 16px;
+ align-items: flex-start;
+ border-radius: 0;
+}
+.author-bio .k-ico-jr0g {
+ width: 60px;
+ height: 60px;
+ background: var(--accent);
+ color: var(--secondary);
+ font-family: var(--font);
+ font-size: 2rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-shrink: 0;
+ border: 2px solid var(--primary);
+}
+footer {
+ background: var(--primary);
+ color: var(--secondary);
+ text-align: center;
+ padding: 28px;
+ font-family: var(--font);
+ font-size: 0.9rem;
+ border-top: 4px solid var(--accent);
+ margin-top: 80px;
+}
+@media (max-width: 768px) {
+ main {
+ grid-template-columns: 1fr;
+ padding: 16px;
+ }
+ .hero-main {
+ padding: 28px 20px;
+ }
+ .hero-main h1 {
+ font-size: 2.5rem;
+ }
+ .content-card, .faq-section {
+ padding: 24px;
+ }
+ nav.v-nav-i7y0 {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ background: var(--primary);
+ position: absolute;
+ top: 70px;
+ left: 0;
+ padding: 20px;
+ border-bottom: 4px solid var(--accent);
+ }
+ nav.v-nav-i7y0.active {
+ display: flex;
+ }
+ .hamburger {
+ display: block;
+ }
+ .right-col {
+ order: 3;
+ }
+}
+</style>
+  <meta property="og:title" content="글 목록 (3/3) · t3b05-sd-room-top5">
+  <meta property="og:description" content="t3b05-sd-room-top5에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sindorim-room-choice.link-hub.org/posts-3.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+<div class="q-btn-fxcc-wrap"><span class="q-btn-fxcc">신도림 룸싸롱 TOP5</span></div>
+<button class="hamburger" id="hamburger" aria-label="메뉴 열기">☰</button>
+<nav class="v-nav-i7y0" id="navMenu">
+<a href="#">비교법</a>
+<a href="#">조건표</a>
+<a href="#">FAQ</a>
+<a href="#">가이드</a>
+</nav>
+</header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 41개 · 3/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-001-tyq2hi.html">신도림 룸싸롱 TOP5 관련 추천 정보</a>
+        <p class="post-item__summary">---</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <span class="pager__current">3</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
